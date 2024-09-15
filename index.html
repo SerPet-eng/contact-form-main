@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <div class="customAlert">
+      <p class="alert-title" id="alert">Message Sent!</p>
+      <p class="alert-message" id="alert">
+        Thanks for completing the form. We'll be in touch soon!
+      </p>
+    </div>
+    <main class="app">
+      <h1 class="app-title">Contact Us</h1>
+      <form class="form">
+        <div class="fname">
+          <p class="fname_label" id="text">First Name</p>
+          <input type="text" class="input" id="fnameInput" />
+          <small id="fnameErrorText"></small>
+        </div>
+        <div class="lname">
+          <p class="lname_label" id="text">Last Name</p>
+          <input type="text" class="input" id="lnameInput" />
+          <small id="lnameErrorText"></small>
+        </div>
+        <div class="email">
+          <p class="email_label" id="text">Email Address</p>
+          <input type="email" class="input" id="emailInput" />
+          <small id="emailErrorText"></small>
+        </div>
+        <div class="query">
+          <p class="query_label" id="text">Query Types</p>
+          <div class="radioBox">
+            <label for="radio1">
+              <input
+                type="radio"
+                id="radio1"
+                name="enquiryType"
+                class="radio"
+                value="1"
+              />
+              <span class="radioContainer_label">General Enquiry</span>
+            </label>
+            <label for="radio2">
+              <input
+                type="radio"
+                id="radio2"
+                name="enquiryType"
+                class="radio"
+                value="2"
+              />
+              <span class="radioContainer_label">Support Request</span>
+            </label>
+          </div>
+          <small id="radioErrorText"></small>
+        </div>
+        <div class="message">
+          <p class="message_label" id="text">Message</p>
+          <textarea type="textarea" class="input" id="messageInput"></textarea>
+          <small id="messageErrorText"></small>
+        </div>
+
+        <div class="confirmation">
+          <label class="specialBox" for="checkbox">
+            <input type="checkbox" class="checkbox" id="checkboxInput" />
+            <p class="confirmation_label" id="text">
+              I consent to being contacted by the team
+            </p>
+          </label>
+        </div>
+        <small id="confirmErrorText"></small>
+        <button id="button">Submit</button>
+      </form>
+    </main>
+    <!-- 
+  Contact Us
+
+  First Name
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
